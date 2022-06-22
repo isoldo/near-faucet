@@ -2,6 +2,12 @@
 
 A simple NEAR faucet smart contract
 
+# Prerequisites
+A functional Rust compiler able to compile to wasm, using
+```
+cargo build --target wasm32-unknown-unknown --release
+```
+
 # Usage
 ```
 near call $FAUCET_ACCOUNT_ID pay '{"amount": "AMOUNT", "to": "RECEIVER_TESTNET_ACCOUNT"}' --accountId $FAUCET_ACCOUNT_ID
